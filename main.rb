@@ -6,7 +6,7 @@ client.once :ready do
   puts "Logged in as #{client.user}"
 end
 
-COUNT == 1
+COUNT = 1
 
 client.on :message do |message|
   next if message.author.bot?
