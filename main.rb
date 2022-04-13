@@ -10,7 +10,7 @@ COUNT = 1
 
 client.on :message do |message|
   next if message.author.bot?
-  next unless message.content == "Go!"
+  next unless message.content == "/Go!"
   if COUNT == 1
     COUNT = 0
     i = 3
